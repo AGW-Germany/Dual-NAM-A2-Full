@@ -52,3 +52,5 @@ Not affiliated with or endorsed by Steven Atkinson, the Neural Amp Modeler proje
 MIT License. Third-party notices and license texts are in the ZIP (`LICENSES/`), inside the installed plug-in (`Contents/Resources`) and in the repository (`LICENSES/`). Eigen (MPL-2.0) source: https://gitlab.com/libeigen/eigen, commit `ed8cda3ce4cb9d12640f9236fed968655a93b604`.
 
 VST is a trademark of Steinberg Media Technologies GmbH.
+
+![Windows Downloads](https://img.shields.io/github/downloads/AGW-Germany/Dual-NAM-A2-Full/v1.2.0/DualNAM_A2_Full-1.2.0-win-x64.zip?label=Windows%20Downloads)
