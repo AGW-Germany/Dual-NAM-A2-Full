@@ -1,3 +1,5 @@
+![Dual NAM A2 Full](docs/screenshot.png)
+
 First public test release of **Dual NAM A2 Full**: a Windows x64 VST3 with two independent Neural Amp Modeler engines (A2 Full, also A1/LSTM), two IR loaders, true stereo output and a built-in noise gate.
 
 ## Download
