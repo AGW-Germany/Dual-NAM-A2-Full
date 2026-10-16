@@ -1,0 +1,5 @@
+For known issues, see KNOWN_ISSUES.md:
+https://github.com/Naaxas/GatewayStereoPlus/blob/main/KNOWN_ISSUES.md
+
+To report something not listed there:
+https://github.com/Naaxas/GatewayStereoPlus/issues

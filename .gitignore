@@ -1,0 +1,50 @@
+.DS_Store
+xcuserdata
+*.RPP-bak
+build-*
+.idea/
+
+*.ipch
+*.db
+*.suo
+*/.vs
+*.pem
+mkcert*
+
+NeuralAmpModeler/*.wav
+NeuralAmpModeler/peaks/
+
+# Windows build artifacts pulled off the test machine (binaries, not source)
+dist-windows/
+
+# vst3host harness: sources and scripts are tracked, build outputs are not
+tools/vst3host/obj/
+tools/vst3host/obj-win/
+tools/vst3host/logs-win/
+tools/vst3host/vst3*
+!tools/vst3host/vst3*.cpp
+tools/vst3host/*.exe
+tools/vst3host/*.dSYM/
+
+# Internal working documents. They stay on disk and keep working locally, but
+# they describe local working setup and a personal model library, none of
+# which belongs in a public repository.
+CLAUDE.md
+BUGHUNT_PROMPT.md
+DIFF_BUGHUNT_PROMPT.md
+RELEASE_CHECKLIST.md
+DIFF_FINDINGS.md
+STATE_OF_PLAY.md
+dist/
+packaging/START-HERE.txt
+
+# DualNAM project
+_reference/
+out/
+dist/
+test-output/
+tests/generated/
+tools/coretest/obj/
+tools/coretest/*.exe
+tools/vst3host/*.obj
+release/

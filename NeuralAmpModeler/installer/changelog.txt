@@ -1,0 +1,15 @@
+Gateway Stereo Plus changelog
+https://github.com/Naaxas/GatewayStereoPlus
+
+11/08/2026 - v1.0.0  First public release. Based on Neural Amp Modeler 0.7.15.
+
+  Added:   dual-mono processing (independent model, EQ, IR and DC blocker per
+           channel); stereo-linked noise gate; inverse gain Link for
+           level-matched A/B; delay-compensated dry path with Mix, Delta,
+           Matched Bypass and a DIFF readout; two meter styles.
+  Changed: output mode now defaults to Raw, not Normalized; gain changes glide
+           across one block instead of stepping at the block boundary.
+  Fixed:   17 defects, including three inherited from upstream that crashed the
+           host. See CHANGELOG.md and AUDIT_REPORT.md.
+
+Version numbering restarts at 1.0.0. It is not a continuation of upstream's.

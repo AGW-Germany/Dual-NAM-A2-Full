@@ -77,7 +77,7 @@ with the original NAM plug-in or with Gateway Stereo Plus.
 **Uninstall:** delete the folder `C:\Program Files\Common Files\VST3\Dual NAM A2 Full 1.2.0.vst3`.
 
 The full user guide (controls, gate, routing, sample rate, presets, limitations) is the
-`README.md` inside the download.
+`README.md` inside the download; the same text is in [docs/USER_GUIDE.md](docs/USER_GUIDE.md).
 
 ## Features
 
@@ -101,11 +101,30 @@ The full user guide (controls, gate, routing, sample rate, presets, limitations)
 * Tested by the author in Studio One 8 Pro; other hosts have been checked with the Steinberg
   VST3 validator only.
 
-## Source code
+## Source code and building
 
-The source code of the plug-in is not published at this time; this repository contains the
-release information and the license notices. The plug-in is built on the following open-source
-projects (exact licenses in [LICENSES/ThirdPartyNotices.txt](LICENSES/ThirdPartyNotices.txt)):
+This repository contains the complete source code of Dual NAM A2 Full 1.2.0, the exact state the
+released binary was built from. See **[BUILD.md](BUILD.md)** for how to build it on Windows x64.
+The plug-in is developed and supported for Windows x64 only; you are welcome to use the code for
+your own ports, but other platforms are not supported.
+
+**Source archive:** the complete source is also attached to the v1.2.0 release as
+[DualNAM_A2_Full-1.2.0-source.zip](https://github.com/AGW-Germany/Dual-NAM-A2-Full/releases/download/v1.2.0/DualNAM_A2_Full-1.2.0-source.zip)
+(dependencies are fetched separately, see [BUILD.md](BUILD.md)). The "Source code (zip/tar.gz)"
+archives that GitHub generates automatically for the tag `v1.2.0` contain only the documentation
+that was in the repository when the tag was created, **not** the source code.
+
+| Path | Content |
+|---|---|
+| `NeuralAmpModeler/` | the plug-in: DSP, state, GUI (`NeuralAmpModeler.cpp/.h`, `NeuralAmpModelerControls.h`), identity (`config.h`), resources, Visual Studio projects |
+| `iPlug2/`, `NeuralAmpModelerCore/`, `AudioDSPTools/`, `eigen/` | dependencies (git submodules, unmodified) |
+| `build.ps1`, `Install.ps1` | release build and installer |
+| `run_tests.ps1`, `tools/`, `tests/` | automated tests (VST3 test host, NAM core tests, test models) |
+| `docs/` | user guide and screenshot |
+| `LICENSES/`, `LICENSE` | license texts and third-party notices |
+
+The plug-in is built on the following open-source projects (exact licenses in
+[LICENSES/ThirdPartyNotices.txt](LICENSES/ThirdPartyNotices.txt)):
 
 * [Gateway Stereo Plus](https://github.com/Naaxas/GatewayStereoPlus) (MIT), a fork of the
   [Neural Amp Modeler plug-in](https://github.com/sdatkinson/NeuralAmpModelerPlugin) (MIT)
@@ -141,6 +160,8 @@ The plug-in is licensed under the MIT License, see [LICENSE](LICENSE):
 
 Third-party notices and the full license texts are in [LICENSES/](LICENSES/)
 (start with [ThirdPartyNotices.txt](LICENSES/ThirdPartyNotices.txt)); the same files are included
-in the download and inside the installed plug-in (`Contents/Resources`).
+in the download and inside the installed plug-in (`Contents/Resources`). The build uses
+`NeuralAmpModeler/installer/ThirdPartyNotices.txt` as the source of the notices; the dependencies
+in the submodules carry their own license files.
 
 VST is a trademark of Steinberg Media Technologies GmbH.
